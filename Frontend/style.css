@@ -16,6 +16,7 @@ body, html {
   height: 100%;
   background-color: rgb(129, 129, 209);
   overflow: hidden;
+  font-family: 'Bangers', cursive;
 }
 
 nav{
@@ -211,9 +212,10 @@ height: 1037px;
 
 
 /* LOG OUT */
-.logOut{
+.botonOutAndRank{
   padding-top: 35px;
   padding-left: 20px;
+  padding:10px;
 }
 
 .botonLogOut {
@@ -222,11 +224,23 @@ height: 1037px;
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
-  margin-bottom: 415px;
   height: 60px;
 }
 
 .botonLogOut:hover {
+  transform: scale(1.1);
+}
+
+.botonRanking {
+  background-color: rgb(92, 1, 1);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  height: 60px;
+}
+
+.botonRanking:hover {
   transform: scale(1.1);
 }
 
@@ -318,6 +332,11 @@ height: 1037px;
   background-color: rgb(255, 255, 255);
 }
 
+#Columnas2{
+  display: flex;
+  justify-content: center;
+}
+
 #h2Ranking {
   font-size: 40px;
   margin-top: 20px; /* Ajusta este valor para centrar verticalmente según sea necesario */
@@ -336,7 +355,7 @@ height: 1037px;
   background-color: aqua;
 }
 
-#h3Puntaje {
+#h3Puntajes {
   font-size: 20px;
   margin-top: 20px; /* Ajusta este valor para centrar verticalmente según sea necesario */
   text-align: center;

@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -80,8 +81,9 @@
 
     <div class="columnaIzquierda">
 
-      <header id="botonRanking">
-        <button onclick="changeScreenRank()"> <img src="images/QuienEsQuien.png" alt="portada" width="380" height="240" class="portada"></button>
+      <header id="botonExplicacion">
+        <button onclick="changeScreenExp()"> <img src="images/QuienEsQuien.png" alt="portada" width="380" height="240"
+            class="portada"></button>
       </header>
 
       <nav class="seccionPreguntas">
@@ -110,11 +112,10 @@
           <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
         </form>
       </nav>
-
-      <section class="logOut">
+      <section class="botonesOutAndRank">
         <button class="botonLogOut" onclick="changeScreenOut()">Log Out</button>
+        <button class="botonRanking" onclick="changeScreenRank()">Ranking</button>
       </section>
-
     </div>
 
     <div class="columnaDerecha">
@@ -259,23 +260,24 @@
   <div class="containerRanking" id="ranking" style="display:none">
     <div id="tableroRanking">
       <h2 id="h2Ranking">Ranking</h2>
-      <div id="columnaTopJugadores">
+      <div id="Columnas2">
+        <div id="columnaTopJugadores">
           <h3 id="h3TopJugadores">Top Jugadores</h3>
-        <ol>
-          <li>Eat</li>
-          <li>Code</li>
-          <li>Sleep</li>
-        </ol>
+          <ol>
+            <li>Eat</li>
+            <li>Code</li>
+            <li>Sleep</li>
+          </ol>
+        </div>
+        <div id="columnaPuntajes">
+          <h3 id="h3Puntajes">Mejores Puntajes</h3>
+          <ol>
+            <li>Eat</li>
+            <li>Code</li>
+            <li>Sleep</li>
+          </ol>
+        </div>
       </div>
-      <div id="columnaPuntajes">
-        <h3 id="h3Puntajes">Mejores Puntajes</h3>
-      <ol>
-        <li>Eat</li>
-        <li>Code</li>
-        <li>Sleep</li>
-      </ol>
-    </div>
-      
     </div>
   </div>
 
