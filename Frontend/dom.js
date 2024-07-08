@@ -79,23 +79,23 @@ function changeScreenRank() {
 // GET
 
 function getUserLogIn() {
-    return doocument.getElementById("usuarioLogin").value
+    return document.getElementById("usuarioLogin").value
 }
 function getPasswordLogIn() {
-    return doocument.getElementById("contraseñaLogin").value
+    return document.getElementById("contraseñaLogin").value
 }
 function getDni() {
-    return doocument.getElementById("dni").value
+    return document.getElementById("dni").value
 }
 function getName() {
-    return doocument.getElementById("nombre").value
+    return document.getElementById("nombre").value
 }
 function getUsername() {
-    return doocument.getElementById("apellido").value
+    return document.getElementById("apellido").value
 }
 function getUser() {
-    return doocument.getElementById("usuario").value
+    return document.getElementById("usuario").value
 }
 function getPassword() {
-    return doocument.getElementById("contraseña").value
+    return document.getElementById("contraseña").value
 }

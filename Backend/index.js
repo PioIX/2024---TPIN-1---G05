@@ -1,33 +1,33 @@
 var express = require('express'); //Tipo de servidor: Express
 var bodyParser = require('body-parser'); //Convierte los JSON
-var cors = require('cors');
+const MySQL = require('./modulos/mysql')
+const cors = require('cors');
 
 var app = express(); //Inicializo express
-var port = process.env.PORT || 3000; //Ejecuto el servidor en el puerto 3000
+var port = process.env.PORT || 7000; //Ejecuto el servidor en el puerto 3000
 
 // Convierte una petición recibida (POST-GET...) a objeto JSON
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', function(req, res){
-    res.status(200).send({
-        message: 'GET Home route working fine!'
-    });
-});
-
-/**
- * req = request. en este objeto voy a tener todo lo que reciba del cliente
- * res = response. Voy a responderle al cliente
- */
-app.get('/saludo', function(req,res){
-    console.log(req.query) //Los pedidos get reciben los datos del req.query
-    res.send({respuesta: `Respuesta del Backend`})
+app.get('/JugadoresDos', async function(req,res){
+    console.log(req.query) 
+    const respuesta = await MySQL.realizarQuery(`
+    SELECT * FROM JugadoresDos;
+    `)
+    res.send(respuesta)
 })
 
-app.post('/nombreDelPedido', function(req,res) {
-    console.log(req.body) //Los pedidos post reciben los datos del req.body
-    res.send("ok")
+app.post('/InsertarJugadoresDos', async function(req,res) {
+    console.log(req.body) 
+    result = await MySQL.realizarQuery(`SELECT * FROM JugadoresDos WHERE nombre = '${req.body.nombre}' AND dni = ${req.body.dni} AND apellido = '${req.body.apellido}' AND usuario = '${req.body.usuario}' AND contraseña = '${req.body.contraseña}'`);
+    if (result.length > 0) {
+        res.send("Ya existe")
+    } else {
+        await MySQL.realizarQuery(`INSERT INTO JugadoresDos (nombre, apellido, dni, usuario, contraseña) VALUES ('${req.body.nombre}', '${req.body.apellido}','${req.body.dni}','${req.body.usuario}', '${req.body.contraseña}')`);
+        res.send("ok")
+    }
 })
 
 //Pongo el servidor a escuchar
