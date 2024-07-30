@@ -32,6 +32,7 @@
           <br>
           <br>
           <button onclick="login()" class="botonLogin">Log In</button>
+
         </div>
       </div>
 
@@ -129,12 +130,12 @@
 
         <figure>
           <img src="images/emiliano-martinez_4fecfd9.png" alt="emiliano-martinez_4fecfd9" class="personaje">
-          <figcaption>Emiliano Martinez</figcaption>
+          <figcaption>Martinez</figcaption>
         </figure>
 
         <figure>
           <img src="images/griezmann.png" alt="griezmann" class="personaje">
-          <figcaption>Antoine Griezmann</figcaption>
+          <figcaption>Griezmann</figcaption>
         </figure>
 
         <figure>
@@ -183,8 +184,8 @@
         </figure>
 
         <figure>
-          <img src="images/paul.png" alt="paul" class="personaje">
-          <figcaption>benchi</figcaption>
+          <img src="images/tevez.png" alt="tevez" class="personaje">
+          <figcaption>Carlos Tevez</figcaption>
         </figure>
 
         <figure>
@@ -213,38 +214,37 @@
         </figure>
 
         <figure>
-          <img src="images/benchi.png" class="personaje" alt="benchi">
-          <figcaption>benchi</figcaption>
+          <img src="images/maradona.png" class="personaje" alt="maradona">
+          <figcaption>Diego Maradona</figcaption>
         </figure>
 
         <figure>
-          <img src="images/benchi.png" class="personaje" alt="benchi">
-          <figcaption>benchi</figcaption>
+          <img src="images/gallardo.png" class="personaje" alt="gallardo">
+          <figcaption>Gallardo</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gvardiol.png" class="personaje" alt="gvardiol">
+          <figcaption>Gvardiol</figcaption>
         </figure>
 
         <figure>
-          <img src="images/benchi.png" class="personaje" alt="benchi">
-          <figcaption>benchi</figcaption>
+          <img src="images/enzo.png" class="personaje" alt="enzo">
+          <figcaption>Enzo</figcaption>
         </figure>
 
         <figure>
-          <img src="images/benchi.png" class="personaje" alt="benchi">
-          <figcaption>benchi</figcaption>
+          <img src="images/Riquelme.png" class="personaje" alt="Riquelme">
+          <figcaption>Riquelme</figcaption>
         </figure>
 
         <figure>
-          <img src="images/benchi.png" class="personaje" alt="benchi">
-          <figcaption>benchi</figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/timi.png" alt="timi" class="personaje">
-          <figcaption>benchi</figcaption>
+          <img src="images/Julian Alvarez.png" alt="Julian Alvarez" class="personaje">
+          <figcaption>Julian Alvarez</figcaption>
         </figure>
       </section>
       <!-- Sección de Temporizador y Contadores -->
       <section class="temporizador-y-contadores">
-        <div id="temporizador">
+        <div id="temporizador" onclick="changeScreenAdmin()">
           Tiempo restante: <span id="tiempo-restante">02:00</span>
         </div>
         <div id="contador-usuario">
@@ -264,20 +264,66 @@
         <div id="columnaTopJugadores">
           <h3 id="h3TopJugadores">Top Jugadores</h3>
           <ol>
-            <li>Eat</li>
-            <li>Code</li>
-            <li>Sleep</li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
           </ol>
         </div>
         <div id="columnaPuntajes">
           <h3 id="h3Puntajes">Mejores Puntajes</h3>
           <ol>
-            <li>Eat</li>
-            <li>Code</li>
-            <li>Sleep</li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
           </ol>
         </div>
       </div>
+    </div>
+  </div>
+  <div id="admin" style="display:none;" class = "divisionAdmin">
+    <div class="containerAdmin">
+      <fieldset style = "border-radius: 10px; color: white; width: fit-content;">
+        <legend>Nombre</legend>
+        <input id = "adminNombre">
+      </fieldset>
+
+      <fieldset style = "border-radius: 10px; color: white; width: fit-content;">
+        <legend>Apellido</legend>
+        <input id = "adminApellido">
+      </fieldset>
+
+      <fieldset style = "border-radius: 10px; color: white; width: fit-content;">
+        <legend>Usuario</legend>
+        <input id = "adminUsuario">
+      </fieldset>
+
+      <fieldset style = "border-radius: 10px; color: white; width: fit-content;">
+        <legend>DNI</legend>
+        <input id = "adminDNI" type = "int">
+      </fieldset>
+
+      <fieldset style = "border-radius: 10px; color: white; width: fit-content;">
+        <legend>Contraseña</legend>
+        <input id = "adminContraseña">
+      </fieldset>
+
+      <fieldset style = "border-radius: 10px; color: white; width: fit-content;">
+        <legend>Puntaje</legend>
+        <input id = "adminPuntaje" type = "int">
+      </fieldset>
+      <br>
+      <button onclick="PosteoComoAdmin()">Agregar Jugador</button>
+      <br>
+      <br>
+      <button onclick="changeScreenIn()">volver al juego</button>
+    </div>
+
+    <div class="containerAdmin">
+      <br>
+      <button onclick="veoJugadores()">Traer Tabla Jugadores</button>
+      <br>
+      <br>
+      <table id = "tablaAdmin" style="display: none;"></table>
     </div>
   </div>
 

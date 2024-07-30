@@ -76,6 +76,21 @@ function changeScreenRank() {
     }
 }
 
+function changeScreenAdmin() {
+    const contenido = document.getElementById("contenido");
+    const admin = document.getElementById("admin");
+    
+
+    if(admin.style.display !== "none") {
+        admin.style.display = "none";
+        contenido.style.display = "";
+    }
+    else {
+        admin.style.display = "";
+        contenido.style.display = "none";
+    }
+}
+
 // GET
 
 function getUserLogIn() {
@@ -98,4 +113,24 @@ function getUser() {
 }
 function getPassword() {
     return document.getElementById("contraseña").value
+}
+
+//ADMIN
+function getDniAdmin() {
+    return document.getElementById("adminDNI").value
+}
+function getNameAdmin() {
+    return document.getElementById("adminNombre").value
+}
+function getUsernameAdmin() {
+    return document.getElementById("adminApellido").value
+}
+function getUserAdmin() {
+    return document.getElementById("adminUsuario").value
+}
+function getPasswordAdmin() {
+    return document.getElementById("adminContraseña").value
+}
+function getPuntajeAdmin() {
+    return document.getElementById("adminPuntaje").value
 }

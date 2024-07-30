@@ -30,6 +30,20 @@ app.post('/InsertarJugadoresDos', async function(req,res) {
     }
 })
 
+app.delete("/borrarJugadoresDos", async function(req,res) {
+    console.log(req.body)
+    await MySQL.realizarQuery(`DELETE FROM JugadoresDos WHERE nombre = '${req.body.nombre}';`)
+    res.send("ok")
+})
+
+app.put('/actualizarJugadoresDos', async function(req, res){
+    console.log(req.body);
+    const { nombre, apellido, dni, usuario, contraseña} = req.body;
+    await MySQL.realizarQuery(`UPDATE JugadoresDos SET nombre = '${nombre}', apellido = '${apellido}', dni = '${dni}', usuario = '${usuario}', contraseña = '${contraseña}' WHERE dni = ${dni};`);
+        
+    res.send("ok");
+});
+
 //Pongo el servidor a escuchar
 app.listen(port, function(){
     console.log(`Server running in http://localhost:${port}`);
