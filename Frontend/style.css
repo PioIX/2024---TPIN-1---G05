@@ -369,3 +369,32 @@ grid-template-columns: 1fr 3fr;
   width: 300px;
   background-color: aqua;
 }
+
+.containerAdmin {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  flex-direction: column;
+}
+
+.divisionAdmin{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  display: none;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
