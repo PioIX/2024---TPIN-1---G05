@@ -367,37 +367,5 @@ grid-template-columns: 1fr 3fr;
   margin-left: 20px;
   height: 350px;
   width: 300px;
-  background-color: rgb(26, 165, 230);
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #f0f0f0;
-}
-
-s
-.containerAdmin {
-  display: flex;
-  margin-bottom: 15px;
-  margin-left: 50px;
-}
-
-.divisionAdmin{
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  padding: 20px;
-}
-
-table {
-  border-collapse: collapse;
-  display: none;
-}
-
-th, td {
-  text-align: center;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background-color: #f2f2f2;
-  text-align: center;
+  background-color: aqua;
 }
