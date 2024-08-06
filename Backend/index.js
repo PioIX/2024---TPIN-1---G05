@@ -19,6 +19,22 @@ app.get('/JugadoresDos', async function(req,res){
     res.send(respuesta)
 })
 
+app.get('/PersonajesFutbol', async function(req,res){
+    console.log(req.query) 
+    const respuesta = await MySQL.realizarQuery(`
+    SELECT * FROM PersonajesFutbol;
+    `)
+    res.send(respuesta)
+})
+
+app.get('/CaracteristicasPjs', async function(req,res){
+    console.log(req.query) 
+    const respuesta = await MySQL.realizarQuery(`
+    SELECT * FROM CaracteristicasPjs;
+    `)
+    res.send(respuesta)
+})
+
 app.post('/InsertarJugadoresDos', async function(req,res) {
     console.log(req.body) 
     result = await MySQL.realizarQuery(`SELECT * FROM JugadoresDos WHERE nombre = '${req.body.nombre}' AND dni = ${req.body.dni} AND apellido = '${req.body.apellido}' AND usuario = '${req.body.usuario}' AND contraseña = '${req.body.contraseña}'`);

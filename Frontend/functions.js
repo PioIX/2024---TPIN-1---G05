@@ -1,8 +1,8 @@
 let clienteLogueado;
 
 async function verificoLogin(usuario, contraseña) {
-    const response = await fetch('http://localhost:7000/JugadoresDos',{
-        method:"GET",
+    const response = await fetch('http://localhost:7000/JugadoresDos', {
+        method: "GET",
         headers: {
             "Content-Type": "application/json",
         },
@@ -33,7 +33,7 @@ async function login() {
     else if (verificacion == -1) {
         alert("Registrese si no tiene usuario")
     }
-    else if (verificacion == 0){
+    else if (verificacion == 0) {
         alert("Verifique los parametros ingresados")
     }
 }
@@ -53,16 +53,16 @@ async function envioPost() {
     console.log(data)
 
     // Envio un pedido POST con un JSON en el body
-    const response = await fetch('http://localhost:7000/InsertarJugadoresDos',{
-        method:"POST",
+    const response = await fetch('http://localhost:7000/InsertarJugadoresDos', {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body:JSON.stringify(data),
+        body: JSON.stringify(data),
     });
     console.log(response);
     changeScreenLogIn()
-    
+
 }
 
 function verificoRegistro(dni, password, name, surname) {
@@ -93,8 +93,8 @@ function register() {
 let personaje;
 
 async function consigoPersonajes() {
-    const response = await fetch('http://localhost:7000/JugadoresDos',{
-        method:"GET",
+    const response = await fetch('http://localhost:7000/JugadoresDos', {
+        method: "GET",
         headers: {
             "Content-Type": "application/json",
         },
@@ -132,7 +132,7 @@ async function pPremier() {
     console.log(array)
     console.log(personaje)
 
-    
+
 
     for (let i = 0; i < array.length; i++) {
         if (array[i].usuario == "huracan" && personaje.usuario == "huracam") {
@@ -189,26 +189,26 @@ async function PosteoComoAdmin() {
     console.log(data)
 
     // Envio un pedido POST con un JSON en el body
-    const response = await fetch('http://localhost:7000/InsertarJugadoresDos',{
-        method:"POST",
+    const response = await fetch('http://localhost:7000/InsertarJugadoresDos', {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body:JSON.stringify(data),
+        body: JSON.stringify(data),
     });
     return console.log(response);
 }
 
 async function veoJugadores() {
-    const response = await fetch('http://localhost:7000/JugadoresDos',{
-        method:"GET",
+    const response = await fetch('http://localhost:7000/JugadoresDos', {
+        method: "GET",
         headers: {
             "Content-Type": "application/json",
         },
     })
 
     console.log(response)
-    
+
     const result = await response.json()
     console.log(result)
 
@@ -234,7 +234,7 @@ async function veoJugadores() {
                 <button onclick="envioPut('${result[i].dni}')">Modificar</button>
             </tr>
         `;
-        
+
     }
     document.getElementById("tablaAdmin").innerHTML = tabla;
     document.getElementById("tablaAdmin").style.display = "block";
@@ -245,12 +245,12 @@ async function envioDelete(i) {
         nombre: i
     }
 
-    const response = await fetch('http://localhost:7000/borrarJugadoresDos',{
-        method:"DELETE",
+    const response = await fetch('http://localhost:7000/borrarJugadoresDos', {
+        method: "DELETE",
         headers: {
             "Content-Type": "application/json",
         },
-        body:JSON.stringify(objeto),
+        body: JSON.stringify(objeto),
     });
     console.log(response);
 }
@@ -275,3 +275,35 @@ async function envioPut(dni) {
 
     console.log(response);
 }
+
+async function traeJugadores() {
+    const response = await fetch('http://localhost:7000/PersonajesFutbol', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+}
+
+traeJugadores()
+
+async function traeCaracteristicas() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+}
+
+traeCaracteristicas()
