@@ -31,7 +31,7 @@
           <input id="contraseñaLogin" placeholder="ingrese su contraseña">
           <br>
           <br>
-          <button onclick=" login()" class="botonLogin">Log In</button>
+          <button onclick="iniciar()" class="botonLogin">Log In</button>
         </div>
       </div>
 
@@ -88,28 +88,40 @@
 
       <nav class="seccionPreguntas">
         <form>
-          <div class="preguntas">¿Tu personaje es un hombre?</div>
-          <div class="preguntas">¿Tu personaje es una mujer?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo rubio?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo oscuro?</div>
-          <div class="preguntas">¿Tu personaje tiene canas?</div>
-          <div class="preguntas">¿Tu personaje usa gafas?</div>
-          <div class="preguntas">¿Tu personaje lleva gorro/a?</div>
-          <div class="preguntas">¿Tu personaje tiene barba?</div>
-          <div class="preguntas">¿Tu personaje tiene bigote?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo corto?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
-          <div class="preguntas">¿Tu personaje tiene el pelo largo?</div>
+          <div onclick="Pregunta1()" class="preguntas">¿Tu personaje juega en la Premier Ligue?</div>
+          <div onclick="Pregunta2()" class="preguntas">¿Tu personaje juega en La Liga?</div>
+          <div onclick="Pregunta3()" class="preguntas">¿Tu personaje juega en la Ligue 1?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje juega en la Liga Argentina?</div>
+          <div onclick="Pregunta5()" class="preguntas">¿Tu personaje juega en el Manchester city?</div>
+          <div onclick="Pregunta6()" class="preguntas">¿Tu personaje juega en el Manchester united?</div>
+          <div onclick="Pregunta7()" class="preguntas">¿Tu personaje juega en el Real Madrid?</div>
+          <div onclick="Pregunta8()" class="preguntas">¿Tu personaje juega en el Arsenal?</div>
+          <div onclick="Pregunta9()" class="preguntas">¿Tu personaje juega en Boca Juniors?</div>
+          <div onclick="Pregunta10()" class="preguntas">¿Tu personaje juega en River Plate?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Francia?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Argentina?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Croacia?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Noruega?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Inglaterra?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Belgica?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Paises Bajos?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Uruguay?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Republica Checa?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Alemania?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de Brasil?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene el pelo rubio?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene el pelo oscuro?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene el pelo lacio?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene el pelo enrulado/afro?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene el pelo rapado?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene el pelo largo?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje tiene barba/bigote?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje esta sonriendo?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje esta festejando?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje es de tez oscura?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje se le ve la marca de ropa?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje usa accesorios(collar, pulsera, casco, vincha, guantes)?</div>
+          <div onclick="Pregunta4()" class="preguntas">¿Tu personaje su equipacion tiene cuellito?</div>
         </form>
       </nav>
       <section class="botonesOutAndRank">
@@ -122,121 +134,122 @@
 
       <section class="personas">
 
-        <figure>
+        <figure id="p1" onclick="KevinDeBruyne()">
           <img src="images/debruyne.png" alt="debruyne" class="personaje">
           <figcaption>Kevin Debruyne</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p2" onclick="Martinez()">
           <img src="images/emiliano-martinez_4fecfd9.png" alt="emiliano-martinez_4fecfd9" class="personaje">
           <figcaption>Martinez</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p3" onclick="Griezmann()">
           <img src="images/griezmann.png" alt="griezmann" class="personaje">
           <figcaption>Griezmann</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p4" onclick="Kylian_Mbappe()">
           <img src="images/mbappe.png" alt="mbappe" class="personaje">
           <figcaption>Kylian Mbappe</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p5" onclick="Lionel_Messi()">
           <img src="images/messi.png" alt="messi" class="personaje">
           <figcaption>Lionel Messi</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p6" onclick="Luka_Modric()">
           <img src="images/modric.png" alt="modric" class="personaje">
           <figcaption>Luka Modric</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p7" onclick="Odegaard()">
           <img src="images/odegaard.png" alt="odegaard" class="personaje">
           <figcaption>Odegaard</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p8" onclick="Rudiger()">
           <img src="images/rudiger.png" alt="rudiger" class="personaje">
           <figcaption>Rudiger</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p9" onclick="Saka()">
           <img src="images/saka.png" alt="saka" class="personaje">
           <figcaption>Saka</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p10" onclick="Rodrigo_Depaul()">
           <img src="images/video-golazo-rodrigo-paul-para-darle-triunfo-al-atletico-madrid-1034645-152014 (2).png" alt="depaul" class="personaje">
           <figcaption>Rodrigo Depaul</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p11" onclick="Vinicius_Jr()">
           <img src="images/vinicius.png" alt="vinicius" class="personaje">
           <figcaption>Vinicius JR</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p12" onclick="Witsel()">
           <img src="images/WITSEL_900x900.png" alt="witsel" class="personaje">
           <figcaption>Witsel</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p13" onclick="Carlos_Tevez()">
           <img src="images/tevez.png" alt="tevez" class="personaje">
           <figcaption>Carlos Tevez</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p14" onclick="Ake()">
           <img src="images/ake.png" alt="ake" class="personaje">
           <figcaption>Ake</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p15" onclick="David_Beckham()">
           <img src="images/beckham.png" class="personaje" alt="beckham">
           <figcaption>David Beckham</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p16" onclick="Cavani()">
           <img src="images/cavani.png" class="personaje" alt="cavani">
           <figcaption>Cavani</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p17" onclick="Peter_Cech()">
           <img src="images/cech.png" class="personaje" alt="cech">
           <figcaption>Peter Cech</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p18" onclick="Valderrama()">
           <img src="images/valderrama.png" class="personaje" alt="valderrama">
           <figcaption>Valderrama</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p19" onclick="Diego_Maradona()">
           <img src="images/maradona.png" class="personaje" alt="maradona">
           <figcaption>Diego Maradona</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p20" onclick="Gallardo()">
           <img src="images/gallardo.png" class="personaje" alt="gallardo">
           <figcaption>Gallardo</figcaption>
         </figure>
-        <figure>
+
+        <figure id="p21" onclick="Gvardiol()">
           <img src="images/gvardiol.png" class="personaje" alt="gvardiol">
           <figcaption>Gvardiol</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p22" onclick="Enzo()">
           <img src="images/enzo.png" class="personaje" alt="enzo">
           <figcaption>Enzo</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p23" onclick="Riquelme()">
           <img src="images/Riquelme.png" class="personaje" alt="Riquelme">
           <figcaption>Riquelme</figcaption>
         </figure>
 
-        <figure>
+        <figure id="p24" onclick="Julian_Alvarez()">
           <img src="images/Julian Alvarez.png" alt="Julian Alvarez" class="personaje">
           <figcaption>Julian Alvarez</figcaption>
         </figure>
@@ -325,9 +338,11 @@
       <table id = "tablaAdmin" style="display: none;"></table>
     </div>
   </div>
-
-  <script src="dom.js"></script>
+  
   <script src="functions.js"></script>
+  <script src="dom.js"></script>
+  <script src="functions-for-player.js"></script>
+  
 </body>
 
 </html>
