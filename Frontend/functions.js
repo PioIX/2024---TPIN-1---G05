@@ -757,6 +757,719 @@ async function Pregunta10() {
 
     }
 }
+
+async function Pregunta11() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Francia"){
+                CruzRodrigo_Depaul();
+                CruzValderrama();
+                CruzWitsel();
+                CruzLionel_Messi();
+                CruzCavani();
+                CruzAke();
+                CruzGvardiol();
+                CruzKevin();
+                CruzDavid_Beckham();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzLuka_Modric();
+                CruzMartinez();
+                CruzOdegaard();
+                CruzPeter_Cech();
+                CruzSaka()
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+            } else {
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+            }
+        }
+
+    }
+}
+
+async function Pregunta11() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Argentina"){
+                CruzValderrama();
+                CruzWitsel();
+                CruzCavani();
+                CruzAke();
+                CruzGvardiol();
+                CruzKevin();
+                CruzDavid_Beckham();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzPeter_Cech();
+                CruzSaka()
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+            } else {
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+            }
+        }
+
+    }
+}
+
+async function Pregunta13() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Croacia"){
+                CruzValderrama();
+                CruzWitsel();
+                CruzCavani();
+                CruzAke();
+                CruzKevin();
+                CruzDavid_Beckham();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzOdegaard();
+                CruzPeter_Cech();
+                CruzSaka()
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+            } else {
+                CruzGvardiol();
+                CruzLuka_Modric();
+            }
+        }
+
+    }
+}
+
+async function Pregunta14() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Noruega"){
+                CruzValderrama();
+                CruzWitsel();
+                CruzCavani();
+                CruzAke();
+                CruzKevin();
+                CruzDavid_Beckham();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzPeter_Cech();
+                CruzSaka()
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+            } else {
+                CruzOdegaard();
+            }
+        }
+
+    }
+}
+
+async function Pregunta15() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Inglaterra"){
+                CruzValderrama();
+                CruzWitsel();
+                CruzCavani();
+                CruzAke();
+                CruzKevin();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzPeter_Cech();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+            } else {
+                CruzSaka()
+                CruzDavid_Beckham();
+            }
+        }
+
+    }
+}
+
+async function Pregunta16() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Belgica"){
+                CruzValderrama();
+                CruzCavani();
+                CruzAke();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzPeter_Cech();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+            } else {
+                CruzWitsel();
+                CruzKevin();
+            }
+        }
+
+    }
+}
+
+async function Pregunta17() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Paises Bajos"){
+                CruzValderrama();
+                CruzCavani();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzPeter_Cech();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+                CruzWitsel();
+                CruzKevin();
+            } else {
+                CruzAke();
+            }
+        }
+    }
+}
+
+async function Pregunta18() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Uruguay"){
+                CruzValderrama();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzPeter_Cech();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+                CruzWitsel();
+                CruzKevin();
+                CruzAke();
+            } else {
+                CruzCavani();
+            }
+        }
+    }
+}
+
+async function Pregunta19() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Republica Checa"){
+                CruzValderrama();
+                CruzVinicius_Jr();
+                CruzRudiger();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+                CruzWitsel();
+                CruzKevin();
+                CruzAke();
+                CruzCavani();
+            } else {
+                CruzPeter_Cech();
+            }
+        }
+    }
+}
+
+async function Pregunta20() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Alemania"){
+                CruzValderrama();
+                CruzVinicius_Jr();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+                CruzWitsel();
+                CruzKevin();
+                CruzAke();
+                CruzCavani();
+                CruzPeter_Cech();
+            } else {
+                CruzRudiger();
+            }
+        }
+    }
+}
+
+async function Pregunta21() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Brasil"){
+                CruzValderrama();
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+                CruzWitsel();
+                CruzKevin();
+                CruzAke();
+                CruzCavani();
+                CruzPeter_Cech();
+                CruzRudiger();
+            } else {
+                CruzVinicius_Jr();
+            }
+        }
+    }
+}
+
+async function Pregunta22() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].nacionalidad == "Colombia"){
+                CruzRodrigo_Depaul();
+                CruzKylian_Mbappe();
+                CruzGriezmann();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzLuka_Modric();
+                CruzOdegaard();
+                CruzSaka()
+                CruzDavid_Beckham();
+                CruzWitsel();
+                CruzKevin();
+                CruzAke();
+                CruzCavani();
+                CruzPeter_Cech();
+                CruzRudiger();
+                CruzVinicius_Jr();
+            } else {
+                CruzValderrama();
+            }
+        }
+    }
+}
+
+async function Pregunta23() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].rubio == true){
+                CruzKylian_Mbappe();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzSaka()
+                CruzWitsel();
+                CruzAke();
+                CruzCavani();
+                CruzPeter_Cech();
+                CruzRudiger();
+                CruzVinicius_Jr();
+            } else {
+                CruzRodrigo_Depaul();
+                CruzOdegaard();
+                CruzLuka_Modric();
+                CruzDavid_Beckham();
+                CruzKevin();
+                CruzGriezmann();
+                CruzValderrama();
+            }
+        }
+    }
+}
+
+async function Pregunta24() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].morocho == true){
+                CruzRodrigo_Depaul();
+                CruzOdegaard();
+                CruzLuka_Modric();
+                CruzDavid_Beckham();
+                CruzKevin();
+                CruzGriezmann();
+                CruzValderrama();
+            } else {
+                CruzKylian_Mbappe();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzSaka()
+                CruzWitsel();
+                CruzAke();
+                CruzCavani();
+                CruzPeter_Cech();
+                CruzRudiger();
+                CruzVinicius_Jr();
+            }
+        }
+    }
+}
+
+async function Pregunta25() {
+    const response = await fetch('http://localhost:7000/CaracteristicasPjs', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+
+    console.log(response)
+
+    const result = await response.json()
+    console.log(result)
+
+    for (let i = 0; i < result.length; i++){
+        if((i+1) == numeroAleatorio){
+            array = [result[i]]
+            if(result[i].pelo_lacio == true){
+                CruzRodrigo_Depaul();
+                CruzOdegaard();
+                CruzLuka_Modric();
+                CruzDavid_Beckham();
+                CruzKevin();
+                CruzGriezmann();
+                CruzKylian_Mbappe();
+                CruzMartinez();
+                CruzLionel_Messi();
+                CruzCarlos_Tevez();
+                CruzDiego_Maradona();
+                CruzRiquelme();
+                CruzEnzo();
+                CruzGallardo();
+                CruzJulian_Alvarez();
+                CruzGvardiol();
+                CruzSaka()
+                CruzWitsel();
+                CruzAke();
+                CruzCavani();
+                CruzPeter_Cech();
+                CruzRudiger();
+                CruzVinicius_Jr();
+                CruzValderrama();
+            } else {
+
+            }
+        }
+    }
+}
+
 /*CruzAke();
 CruzCarlos_Tevez();
 CruzCavani();
